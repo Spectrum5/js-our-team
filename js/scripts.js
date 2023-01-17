@@ -31,7 +31,19 @@ let team = [
     }
 ];
 
+const container = document.getElementById(`container`);
 for(let i = 0; i < team.length; i++){
     const object = team[i];
     console.log(object.name, object.job,object.image);
+    
+    container.innerHTML += `
+    <div>
+        <div>
+            <img src = '${object.image}'>
+        </div>
+        <div>
+        <h2>${object.name}</h2>
+        <p>${object.job}</p>
+        </div>
+    </div>` 
 }
