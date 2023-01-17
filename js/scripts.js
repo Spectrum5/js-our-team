@@ -29,4 +29,9 @@ let team = [
         job: `Graphic Designer`,
         image: `img/barbara-ramos-graphic-designer.jpg`
     }
-]
+];
+
+for(let i = 0; i < team.length; i++){
+    const object = team[i];
+    console.log(object.name, object.job,object.image);
+}
